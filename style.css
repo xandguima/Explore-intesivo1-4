@@ -1,0 +1,293 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size:62.5%;
+}
+body{
+  font-family: 'Mulish',sans-serif;
+}
+#app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main{
+  width: 100%;
+  background-color: #F9F4FB;
+  padding: 0 auto;
+}
+main h1, p{
+  text-align: center;
+}
+main h1{
+  margin: 1.7rem 0 0.5rem;
+  
+  color: #B52184;
+  font-size: 3.2rem;
+  font-weight: 900; 
+}
+main p{
+  margin-bottom: 3.5rem;
+  color: #312D64;
+  font-size: 2rem;;
+  font-weight: 600;
+}
+#astronauta{
+  display: block;
+  margin: 0 auto;
+  width: 29rem;
+  height: 30rem;
+}
+#seta-main{
+  display: block;
+  margin:0 auto 9.3rem;
+  max-width: 5.8rem;
+  max-height: 10.5rem;
+  animation: jumping 1s linear infinite;
+  cursor: pointer;
+}
+@keyframes jumping{
+  from {transform: translateY(-15px);}
+  50% {transform: translateY(0);}
+  to {transform: translateY(-15px);}
+
+}
+section{
+  width: 100%;
+  background-color: #312D64;
+  padding: 5.3rem 4rem;
+
+ display: grid;
+ justify-content: space-around;
+ gap: 5rem;
+ 
+}
+.card{
+  max-width: 35.4rem;
+  box-shadow: 0 0.3rem 1.3rem 0 rgba(0, 0, 0, 0.25);;
+  border-radius: 19.865px;
+  background: #FFF;
+
+  display: flex;
+  flex-direction: column;
+  gap:3.3rem;
+  padding: 2.6rem;
+}
+.card img{
+  width: 8rem;
+  height: 8rem;
+}
+.card figcaption p,h2{
+  text-align: left;
+}
+.card figcaption h2{
+  color: #B52184;
+  font-size: 3rem;
+  font-weight: 900;
+
+  margin-bottom:1rem;
+}
+.card figcaption p{
+  max-width: 26.5rem;
+  margin-right: 3.4rem;
+  color: #312D64;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+#contact{
+  width: 100%;
+  background-color: #F9F4FB;
+  padding: 7.8rem 4.1rem 6.3rem;
+}
+#contact h1{
+  color: #B52184;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4.3rem;
+
+}
+#contact form{
+  max-width: 56rem;
+  display: block;
+  margin: 0 auto;
+  
+}
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+}
+/*Ajuste do icone nome*/
+.input-wrapper #iconperson{
+  position: relative;
+  width:100%;  
+}
+#iconperson img{
+  position: absolute;
+  margin:1.2rem 1.4rem;
+  left:0;
+}
+/*Ajuste do icone do email*/
+.input-wrapper #iconemail{
+  position: relative;
+  width:100%
+}
+#iconemail img{
+  position: absolute;
+  margin:1.2rem 1.4rem;
+  left:0;
+}
+/* Ajuste dos inputs*/
+.input-wrapper input,textarea{
+  width: 100%;
+  max-width:56rem;
+  padding: 1.2rem 1.6rem 1.2rem 5rem;
+  border: 0.15rem solid #312D64;
+  border-radius: 1.6rem;
+
+  font-family: 'Mulish',sans-serif;
+  color: #312D64;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+}
+/*Ajuste voltado apenas para a altura do textarea*/
+.input-wrapper textarea{
+  height: 12.5rem;
+  padding-left: 1.6rem;
+}
+/*Ajuste do botão do forms*/
+#contact form button{
+  display: inline-flex;
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  height: 4.5rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.6rem;
+  margin-top: 2.4rem;
+  border: none;
+}
+#contact form button p{
+  font-family: 'Mulish';
+  color:#fff;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+#contact form button:hover{
+  background:#343193;
+}
+/* Rodapé*/
+footer{
+  display:block;
+  width: 100%;
+  height: 7.8rem;
+  padding: 3.1rem 1.6rem;
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+}
+footer p{
+  color:#fff;
+  text-align: center;
+  font-family: 'Mulish';
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media(max-width:300px){
+  #astronauta{
+    width: 20rem;
+    height: 21em;
+  }
+}
+
+@media(min-width:1440px){
+  
+  main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap:3rem;
+  }
+  main #astronauta{
+    width: 60rem;
+    height: 61rem;
+    margin: 0 0 10.4rem 0;
+  }
+  main #group{
+    margin-top:31rem;
+    margin-left: 10rem;
+   
+  }
+  main h1{
+    font-size: 6rem;
+    margin:0;
+
+  }
+  main p{
+    font-size: 3.2rem;
+    margin-bottom: 17rem;
+  }
+  main #seta-main{
+    margin:0 
+  }
+
+  section{
+    display: flex;
+    flex-direction: row;
+    gap:6rem;
+    padding: 6.4rem 11.1rem;
+  }
+  .card{
+    width: 37rem;
+    gap:4rem;
+    padding:3.2rem;
+  }
+  .card img{
+    width: 9.7rem;
+    height: 9.7rem;
+  }
+  .card figcaption h2{
+    font-size: 3.5rem;
+    margin-bottom: 2.4rem;
+  }
+  .card figcaption p{
+    font-size: 1.9rem;
+    padding:0;
+    margin: 0;
+  }
+  #contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:9.2rem;
+    padding: 0;
+  }
+ 
+  #contact span{
+    background-image: url(./img/background-contact-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 49%;
+    
+  }
+  #contact form{
+    margin:9.5rem auto;
+  }
+  .input-wrapper input, textarea{
+    width: 59rem;
+  }
+
+  button:hover{
+    cursor:pointer;
+   
+  }
+  button:focus{
+    background: linear-gradient(134deg, #040412 0%, #030211 100%);
+  }
+}
